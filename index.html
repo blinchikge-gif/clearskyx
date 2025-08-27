@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Чистое Небо</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Чистое Небо</h1>
+    <p>Объединяем сильнейших на сервере Minecraft</p>
+    <a href="#" class="join-btn" id="openJoin">Вступить</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="rules.html">Правила</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>О сервере</h2>
+        <p>На нашем сервере тебя ждут эпические битвы, ивенты и объединение сильнейших игроков.</p>
+    </section>
+
+    <section>
+        <h2>Новости</h2>
+        <ul>
+            <li>Новый ивент «Небесный поход» стартует в эту субботу!</li>
+            <li>Обновление экономики: SC теперь начисляются за алмазы в казне.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Чистое Небо. <a href="rules.html">Правила</a></p>
+</footer>
+
+<!-- Попап Вступить -->
+<div class="join-popup" id="joinPopup">
+    <h3>Вступить в Чистое Небо</h3>
+    <p>Заполните форму и отправьте заявку:</p>
+    <form action="https://formspree.io/f/xvgbgzvr" method="POST">
+        <input type="text" name="name" placeholder="Ваш никнейм" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <textarea name="message" placeholder="Коротко о себе" required></textarea>
+        <button type="submit">Отправить заявку</button>
+    </form>
+    <button class="close-btn" id="closeJoin">Закрыть</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

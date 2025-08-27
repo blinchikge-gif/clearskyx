@@ -1,0 +1,337 @@
+/* ===== Общие настройки ===== */
+body {
+    margin: 0;
+    font-family: 'Orbitron', Arial, sans-serif;
+    background-color: #0a1a2f;
+    color: #cce6ff;
+    scroll-behavior: smooth;
+}
+
+/* ===== Хедер ===== */
+header {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(120deg, #0a1a2f 0%, #001a33 100%);
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 102, 204, 0.3) inset;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 700;
+    background: linear-gradient(90deg, #66ccff, #3399ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px #001a33;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-shadow: 1px 1px 6px #001a33;
+}
+
+/* ===== Кнопка вступить ===== */
+.join-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgba(51, 153, 255, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px #3399ff;
+    transition: all 0.3s;
+}
+
+.join-btn:hover {
+    background-color: rgba(102, 204, 255, 0.9);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #3399ff, 0 0 50px #66ccff;
+}
+
+/* ===== Навигация ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin: 0;
+    background-color: #001a33;
+    border-top: 2px solid #003366;
+    border-bottom: 2px solid #003366;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #cce6ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s;
+    text-shadow: 1px 1px 3px #001a33;
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #66ccff;
+    text-shadow: 0 0 15px #3399ff;
+    transform: scale(1.1);
+}
+
+/* ===== Контент ===== */
+main {
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #0a1a2f 0%, #001a33 100%);
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: rgba(0, 26, 51, 0.7);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #003366 inset;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #3399ff inset, 0 0 20px #66ccff;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #66ccff;
+    text-shadow: 2px 2px 8px #001a33;
+}
+
+main p, main ul {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-shadow: 0 0 3px #001a33;
+}
+
+main ul {
+    margin-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+main ul li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #3399ff;
+    text-shadow: 0 0 5px #003366;
+}
+
+/* ===== Форма регистрации ===== */
+.registration-form {
+    background-color: rgba(0, 26, 51, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+    box-shadow: 0 0 25px #003366 inset;
+}
+
+.registration-form h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #66ccff;
+    text-shadow: 1px 1px 5px #001a33;
+}
+
+.registration-form input, 
+.registration-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(10,26,47,0.7), rgba(0,51,102,0.7));
+    color: #cce6ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(51,153,255,0.5) inset;
+    transition: all 0.3s ease;
+}
+
+.registration-form input:focus,
+.registration-form textarea:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgba(0,102,204,0.9), rgba(102,204,255,0.9));
+    box-shadow: 0 0 20px #3399ff, 0 0 15px #66ccff inset;
+    transform: scale(1.02);
+}
+
+.registration-form textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #3399ff, #66ccff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 0 25px #3399ff, 0 0 15px #66ccff inset;
+    transition: all 0.3s;
+}
+
+.registration-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #3399ff, 0 0 25px #66ccff inset;
+}
+
+/* ===== Попап меню «Вступить» ===== */
+.join-popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(0, 26, 51, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 0 40px #3399ff inset, 0 0 25px #66ccff;
+    padding: 30px 40px;
+    text-align: center;
+    z-index: 1000;
+    transition: top 0.5s ease-in-out, opacity 0.5s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.join-popup.active {
+    top: 100px;
+    opacity: 1;
+}
+
+.join-popup h3 {
+    color: #66ccff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px #001a33;
+}
+
+.join-popup p {
+    color: #cce6ff;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    text-shadow: 0 0 3px #001a33;
+}
+
+.join-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.join-popup input, 
+.join-popup textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(10,26,47,0.7), rgba(0,51,102,0.7));
+    color: #cce6ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(51,153,255,0.5) inset;
+    transition: all 0.3s ease;
+}
+
+.join-popup input:focus,
+.join-popup textarea:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgba(0,102,204,0.9), rgba(102,204,255,0.9));
+    box-shadow: 0 0 20px #3399ff, 0 0 15px #66ccff inset;
+    transform: scale(1.02);
+}
+
+.join-popup textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+.join-popup button[type="submit"] {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #3399ff, #66ccff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 0 25px #3399ff, 0 0 15px #66ccff inset;
+    transition: all 0.3s;
+}
+
+.join-popup button[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #3399ff, 0 0 25px #66ccff inset;
+}
+
+.join-popup button.close-btn {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #ff4d4d, #ff6666);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px #cc0000;
+    transition: all 0.3s;
+}
+
+.join-popup button.close-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #ff0000, 0 0 25px #cc0000;
+}
+
+/* ===== Футер ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #001a33, #0a1a2f);
+    color: #99ccff;
+    border-top: 2px solid #003366;
+    text-shadow: 0 0 5px #001a33;
+    font-family: 'Orbitron', sans-serif;
+}
+
+footer a {
+    color: #66ccff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    color: #99ddff;
+    text-shadow: 0 0 10px #3399ff;
+}
